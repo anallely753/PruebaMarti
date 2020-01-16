@@ -1,0 +1,148 @@
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+    
+
+.nav, nav, footer, .jumbotron-fluid, #headingOne, #headingTwo{
+	background-color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+
+.navbar-brand img{
+	width: 150px;
+	height: auto;
+	position: relative;
+	bottom: 10vh;
+}
+
+.navbar-nav nav-item{
+	text-transform: uppercase;
+}
+.navbar .collapse .navbar-nav .active a{
+	color: red;
+}
+
+h6, button{
+	font-family: Calibri, sans-serif;
+}
+
+.btn-link, p{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+}
+
+#collapseOne .card-body, #collapseOne .card-body{
+	background-color: black;
+	border-top-style: solid;
+	border-color: gray;
+	border-width: 1px;
+}
+
+#derechos{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	color: black;
+	font-size: small;
+}
+
+#azulcol{
+	display: inline-block;
+	height: 70vh;
+	color: white;
+}
+
+#azulcol h1{
+	font-size: 100px;
+	font-family: fantasy;
+	text-align: center;
+}
+
+#azulcol h3{
+	font-size: 30px;
+	font-family: fantasy;
+	text-align: center;
+	color: red;
+}
+
+#pmodal{
+	font-size: x-small;
+	font-family: Calibri, sans-serif;
+}
+
+/*animación*/
+@keyframes huno{
+	0%{
+		/*font-size: 100px;*/
+		/*opacity: .8;*/
+		transform: rotate(20deg);
+	}
+	50%{
+		/*font-size: 110px;*/
+		/*opacity: 1;*/
+	}
+	100%{
+		/*font-size: 100px;*/
+		/*opacity: .8;*/
+		transform: rotate(-20deg);
+
+
+	}
+}
+@keyframes htres{
+	0%{
+		font-size: 30px;
+		opacity: .8;
+		color: white;
+	}
+	50%{
+		font-size: 35px;
+		opacity: 1;
+		color: yellow;
+	}
+	100%{
+		font-size: 30px;
+		opacity: .8;
+		color: white;
+
+	}
+}
+@keyframes boton{
+	0%{
+	}
+	50%{
+		box-shadow: 5px 5px 15px yellow;   
+	}
+	100%{
+	}
+}
+#azulcol h1{
+	animation-name: huno;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+#azulcol h3{
+	animation-name: htres;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+#banimado{
+	animation-name: boton;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+
+}
